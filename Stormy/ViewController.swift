@@ -17,10 +17,19 @@ class ViewController: UIViewController {
         
         let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(apiKey)/")
         let forecastURL = NSURL(string: "51.587243,-0.145021", relativeToURL: baseURL)
+    
         
-//        let weatherData = NSData(contentsOfURL: forecastURL!, options: nil, error: nil)
-        let weatherData = NSData(contentsOfURL: forecastURL!)
-        println(weatherData)
+        let sharedSession = NSURLSession.sharedSession()
+        let downloadTask: NSURLSessionDownloadTask = sharedSession.downloadTaskWithURL(forecastURL!) { (location: NSURL!, response: NSURLResponse!, error: NSError!) -> Void in
+//            println(response)
+    
+            if error == nil {
+                let dataObject = NSData(contentsOfURL: location)
+                let weatherDictionary = NSJSONSerialization.JSONObjectWithData(dataObject!, options: nil, error: nil) as NSDictionary
+                println(weatherDictionary)
+            }
+        }
+        downloadTask.resume()
     }
 
     override func didReceiveMemoryWarning() {
