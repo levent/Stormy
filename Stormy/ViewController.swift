@@ -9,10 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private let apiKey = "b9a141348c7d140edae994e2e92f7c29" // TODO: Move this out of source control and reset API KEY
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(apiKey)/")
+        let forecastURL = NSURL(string: "51.587243,-0.145021", relativeToURL: baseURL)
+        
+//        let weatherData = NSData(contentsOfURL: forecastURL!, options: nil, error: nil)
+        let weatherData = NSData(contentsOfURL: forecastURL!)
+        println(weatherData)
     }
 
     override func didReceiveMemoryWarning() {
