@@ -13,6 +13,7 @@
 		2B5ED4481A78E057004FC730 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5ED4471A78E057004FC730 /* Images.xcassets */; };
 		2B5ED44B1A78E057004FC730 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5ED4491A78E057004FC730 /* LaunchScreen.xib */; };
 		2B5ED4571A78E057004FC730 /* StormyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5ED4561A78E057004FC730 /* StormyTests.swift */; };
+		2BA5C20A1A7A4DAB003B9170 /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5C2091A7A4DAB003B9170 /* Current.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2B5ED4501A78E057004FC730 /* StormyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5ED4551A78E057004FC730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B5ED4561A78E057004FC730 /* StormyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormyTests.swift; sourceTree = "<group>"; };
+		2BA5C2091A7A4DAB003B9170 /* Current.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +79,10 @@
 		2B5ED43D1A78E057004FC730 /* Stormy */ = {
 			isa = PBXGroup;
 			children = (
+				2BA5C20B1A7A4E90003B9170 /* Models */,
 				2B5ED4401A78E057004FC730 /* AppDelegate.swift */,
 				2B5ED4421A78E057004FC730 /* ViewController.swift */,
-				2B5ED4441A78E057004FC730 /* Main.storyboard */,
+				2BA5C20C1A7A59A2003B9170 /* New Group */,
 				2B5ED4471A78E057004FC730 /* Images.xcassets */,
 				2B5ED4491A78E057004FC730 /* LaunchScreen.xib */,
 				2B5ED43E1A78E057004FC730 /* Supporting Files */,
@@ -110,6 +113,22 @@
 				2B5ED4551A78E057004FC730 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BA5C20B1A7A4E90003B9170 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BA5C2091A7A4DAB003B9170 /* Current.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2BA5C20C1A7A59A2003B9170 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				2B5ED4441A78E057004FC730 /* Main.storyboard */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA5C20A1A7A4DAB003B9170 /* Current.swift in Sources */,
 				2B5ED4431A78E057004FC730 /* ViewController.swift in Sources */,
 				2B5ED4411A78E057004FC730 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +425,7 @@
 				2B5ED45C1A78E057004FC730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B5ED45D1A78E057004FC730 /* Build configuration list for PBXNativeTarget "StormyTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +434,7 @@
 				2B5ED45F1A78E057004FC730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
