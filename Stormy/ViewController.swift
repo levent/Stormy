@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private let apiKey = "b9a141348c7d140edae994e2e92f7c29" // TODO: Move this out of source control and reset API KEY
+//    private let apiKey = "b9a141348c7d140edae994e2e92f7c29" // TODO: Move this out of source control and reset API KEY
+    
+    private let apiKey = valueForAPIKey(keyname:"FORECAST_IO_API_KEY")
 
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var currentTimeLabel: UILabel!

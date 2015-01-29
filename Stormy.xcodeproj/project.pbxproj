@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0A87CC1A7A6D630060ED90 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B0A87CB1A7A6D630060ED90 /* ApiKeys.plist */; };
+		2B0A87CE1A7A6D830060ED90 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0A87CD1A7A6D830060ED90 /* ApiKeys.swift */; };
 		2B5ED4411A78E057004FC730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5ED4401A78E057004FC730 /* AppDelegate.swift */; };
 		2B5ED4431A78E057004FC730 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5ED4421A78E057004FC730 /* ViewController.swift */; };
 		2B5ED4461A78E057004FC730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5ED4441A78E057004FC730 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B0A87CB1A7A6D630060ED90 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		2B0A87CD1A7A6D830060ED90 /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		2B5ED43B1A78E057004FC730 /* Stormy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stormy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5ED43F1A78E057004FC730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B5ED4401A78E057004FC730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				2B5ED43F1A78E057004FC730 /* Info.plist */,
+				2B0A87CB1A7A6D630060ED90 /* ApiKeys.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				2BA5C2091A7A4DAB003B9170 /* Current.swift */,
+				2B0A87CD1A7A6D830060ED90 /* ApiKeys.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B5ED4461A78E057004FC730 /* Main.storyboard in Resources */,
+				2B0A87CC1A7A6D630060ED90 /* ApiKeys.plist in Resources */,
 				2B5ED44B1A78E057004FC730 /* LaunchScreen.xib in Resources */,
 				2B5ED4481A78E057004FC730 /* Images.xcassets in Resources */,
 			);
@@ -233,6 +240,7 @@
 			files = (
 				2BA5C20A1A7A4DAB003B9170 /* Current.swift in Sources */,
 				2B5ED4431A78E057004FC730 /* ViewController.swift in Sources */,
+				2B0A87CE1A7A6D830060ED90 /* ApiKeys.swift in Sources */,
 				2B5ED4411A78E057004FC730 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
